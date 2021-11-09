@@ -1,0 +1,124 @@
+.menu-open-btn {
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  cursor: pointer;
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
+}
+.menu-close-btn {
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-left: auto;
+  cursor: pointer;
+}
+.menu-contact-icon {
+  background-color: var(--secondary-text-color);
+  @media screen and (max-width: 768px) {
+    margin-right: 0px;
+    fill: black;
+  }
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+.mob-menu {
+  width: 480px;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--secondary-text-color);
+  padding: 10px 15px 0px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.mob-menu-content {
+  padding-top: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mob-menu-contacts {
+  padding-bottom: 48px;
+}
+
+.mob-menu-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .menu-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+  }
+}
+.link {
+  text-decoration: none;
+  &.curent {
+    color: var(--accent-color);
+  }
+}
+.menu-link {
+  text-decoration: none;
+}
+
+.mob-menu-tel {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 32px;
+}
+.mob-menu-mail {
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  margin-bottom: 64px;
+}
+.mob-socials {
+  display: flex;
+}
+.mob-socials-item {
+  padding-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+.mob-socials-links {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}

@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="nav-logo" href=""> <span class="web">Web</span>Studio</a>
@@ -56,8 +56,62 @@
             >
           </li>
         </ul>
+        <button class="menu-open-btn">
+          <svg class="menu-contact-icon" width="40px" height="40px">
+            <use
+              href="./images/images-decoration/mobile-menu.svg#icon-mobile-open"
+              class="contact-icon-svg"
+            ></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      </div>
+      <div class="backdrop is-hidden">
+        <div class="mob-menu">
+          <div class="mob-menu-content">
+            <div class="mob-menu-nav">
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+              <a href="./index.html" class="menu-link link curent">Студия</a>
+              </li>
+              <li class="mob-menu-item">
+              <a href="./portfolio.html" class="menu-link link">Портфолио</a>
+              </li>
+              <li class="mob-menu-item">
+              <a href="" class="menu-link link">Контакты</a>
+              </li>
+            </ul>
+            </div>
+            <div class="mob-menu-contacts">
+            <a href="tel:+380961111111" class="mob-menu-tel link">+38 096 111 11 11</a>
+            <a href="mailto:info@devstudio.com" class="mob-menu-mail link">info@devstudio.com</a>
+            <ul class="mob-socials">
+              <li class="mob-socials-item">
+                <a href="https://www.instagram.com/" class="mob-socials-links">Instagram</a>
+              </li>
+              <li class="mob-socials-item">
+                <a href="https://twitter.com/" class="mob-socials-links">Twitter</a>
+              </li>
+              <li class="mob-socials-item">
+                <a href="https://www.facebook.com/" class="mob-socials-links">Facebook</a>
+              </li>
+              <li class="mob-socials-item">
+                <a href="https://www.linkedin.com/" class="mob-socials-links">LinkedIn</a>
+              </li>
+            </ul>
+            </div>
+          </div>
+          <button class="menu-close-btn">
+          <svg class="menu-contact-icon" width="40px" height="40px">
+            <use
+              href="./images/images-decoration/mobile-menu.svg#icon-mobile-close"
+              class="contact-icon-svg"
+            ></use>
+          </svg>
+        </button>
+        </div>
+      </div>
+    </header>
     <main>
       <!-- Hero -->
       <section class="section hero-sec">
@@ -134,7 +188,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section work">
+      <section class="section work">
         <div class="container">
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="work-examples">
@@ -173,7 +227,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Team -->
       <section class="section team">
         <div class="container">
@@ -589,7 +643,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-container">
         <div class="footer-nav">
           <a href="" class="footer-logo"> <span class="web">Web</span>Studio</a>
@@ -676,7 +730,7 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
     <!-- Modal windows -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -787,5 +841,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
