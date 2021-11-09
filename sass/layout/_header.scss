@@ -20,9 +20,9 @@
 }
 .header-item {
   margin-right: 50px;
-  &:nth-child(3) {
-    // margin-right: 84px;
-  }
+  // &:nth-child(3) {
+  //   // margin-right: 84px;
+  // }
   &:first-child {
     @media screen and (max-width: 1199px) {
       margin-left: 88px;
