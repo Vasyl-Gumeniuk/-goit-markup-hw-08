@@ -66,10 +66,16 @@
   & > .filter.lessmargin {
     margin: 18px;
   }
-}
-
-&:nth-child(9) {
-  margin-bottom: 0px;
+  &:nth-child(9) {
+    margin-bottom: 0px;
+    @media screen and (min-width: 768px) {
+      margin-left: 7.5px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 }
 
 .filter-item-link {

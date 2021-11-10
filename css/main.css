@@ -1621,6 +1621,13 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .filter-item:nth-child(9) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .filter-item-link {
   display: block;
   text-decoration: none;
