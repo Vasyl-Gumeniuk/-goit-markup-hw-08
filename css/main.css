@@ -92,6 +92,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+  }
+}
+
 .header-item {
   margin-right: 50px;
 }
@@ -126,18 +132,20 @@ img {
   }
 }
 
-.contact {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin-top: 21px;
-  margin-bottom: 20px;
-  margin-left: auto;
-}
-
 @media screen and (max-width: 768px) {
   .contact {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 21px;
+    margin-bottom: 20px;
+    margin-left: auto;
   }
 }
 
@@ -276,7 +284,7 @@ img {
   cursor: pointer;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .menu-open-btn {
     display: none;
   }
@@ -998,6 +1006,7 @@ img {
   .footer-connection {
     margin-left: 70px;
     margin-bottom: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -1452,6 +1461,8 @@ img {
   border-radius: 4px;
   height: 38px;
   padding: 6px 22px;
+  font-size: 16px;
+  line-height: 1.37;
   color: var(--title-text-color);
   text-align: center;
   letter-spacing: 0.03em;
@@ -1472,12 +1483,19 @@ img {
 /* Flex Buttons */
 .buttons-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-list {
+    justify-content: center;
+  }
 }
 
 .buttons-list .button.all {
   min-width: 73px;
+  margin-bottom: 15px;
 }
 
 .buttons-list .button.sites {
@@ -1485,11 +1503,11 @@ img {
 }
 
 .buttons-list .button.designe {
-  min-width: 145px;
+  min-width: 103px;
 }
 
 .buttons-list .buttons-list .button.marketing {
-  min-width: 103px;
+  min-width: 145px;
 }
 
 .buttons-list .button.apps {
@@ -1528,7 +1546,6 @@ img {
 }
 
 .filter-list {
-  display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1536,12 +1553,19 @@ img {
   justify-content: space-between;
 }
 
+@media (min-width: 768px) {
+  .filter-list {
+    display: flex;
+  }
+}
+
 .filter-item {
-  /* position: relative; */
+  max-width: 354px;
+  max-height: 440px;
   padding: 0;
   margin-bottom: 30px;
   list-style: none;
-  flex-basis: calc(100 / 3);
+  flex-basis: calc(100 / 2);
   background: #ffffff;
   border: 1px solid #eeeeee;
 }

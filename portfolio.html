@@ -56,6 +56,14 @@
             >
           </li>
         </ul>
+        <button class="menu-open-btn">
+          <svg class="menu-contact-icon" width="40px" height="40px">
+            <use
+              href="./images/images-decoration/mobile-menu.svg#icon-mobile-open"
+              class="contact-icon-svg"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -71,13 +79,13 @@
               <button class="button sites" type="button">Веб-сайты</button>
             </li>
             <li class="buttons">
+              <button class="button apps" type="button">Приложения</button>
+            </li>
+            <li class="buttons">
               <button class="button designe" type="button">Дизайн</button>
             </li>
             <li class="buttons">
               <button class="button marketing" type="button">Маркетинг</button>
-            </li>
-            <li class="buttons">
-              <button class="button apps" type="button">Приложения</button>
             </li>
           </ul>
           <!-- All filters -->
@@ -329,68 +337,72 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-container">
-        <div class="footer-nav">
-          <a href="" class="footer-logo"> <span class="web">Web</span>Studio</a>
-          <address class="address">
-            <ul class="address-list">
-              <li class="list-item">
-                <a href="" class="address-link"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="nav-thumb">
+          <div class="footer-nav">
+            <a href="" class="footer-logo">
+              <span class="web">Web</span>Studio</a
+            >
+            <address class="address">
+              <ul class="address-list">
+                <li class="list-item">
+                  <a href="" class="address-link"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="list-item">
+                  <a href="mailto:info@devstudio.com" class="address-link mail"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="list-item">
+                  <a href="tel:+380961111111" class="address-link tel"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-connection">
+            <h3 class="connection-title">присоединяйтесь</h3>
+            <ul class="social-items">
+              <li class="socials">
+                <a href="https://www.instagram.com/" class="social-link">
+                  <svg class="footer-social-icon" width="20px" height="20px">
+                    <use
+                      href="./images/images-decoration/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="list-item">
-                <a href="mailto:info@devstudio.com" class="address-link mail"
-                  >info@devstudio.com</a
-                >
+              <li class="socials">
+                <a href="https://twitter.com/" class="social-link">
+                  <svg class="footer-social-icon" width="20px" height="20px">
+                    <use
+                      href="./images/images-decoration/icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="list-item">
-                <a href="tel:+380961111111" class="address-link tel"
-                  >+38 096 111 11 11</a
-                >
+              <li class="socials">
+                <a href="https://www.facebook.com/" class="social-link">
+                  <svg class="footer-social-icon" width="20px" height="20px">
+                    <use
+                      href="./images/images-decoration/icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials">
+                <a href="https://www.linkedin.com/" class="social-link">
+                  <svg class="footer-social-icon" width="20px" height="20px">
+                    <use
+                      href="./images/images-decoration/icons.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-connection">
-          <h3 class="connection-title">присоединяйтесь</h3>
-          <ul class="social-items">
-            <li class="socials">
-              <a href="https://www.instagram.com/" class="social-link">
-                <svg class="footer-social-icon" width="20px" height="20px">
-                  <use
-                    href="./images/images-decoration/icons.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials">
-              <a href="https://twitter.com/" class="social-link">
-                <svg class="footer-social-icon" width="20px" height="20px">
-                  <use
-                    href="./images/images-decoration/icons.svg#icon-twitter"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials">
-              <a href="https://www.facebook.com/" class="social-link">
-                <svg class="footer-social-icon" width="20px" height="20px">
-                  <use
-                    href="./images/images-decoration/icons.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials">
-              <a href="https://www.linkedin.com/" class="social-link">
-                <svg class="footer-social-icon" width="20px" height="20px">
-                  <use
-                    href="./images/images-decoration/icons.svg#icon-linkedin"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <form action="footer-form" class="footer-form">
           <h3 class="form-title">Подпишитесь на рассылку</h3>
@@ -415,5 +427,66 @@
         </form>
       </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="backdrop is-hidden">
+      <div class="mob-menu">
+        <div class="mob-menu-content">
+          <div class="mob-menu-nav">
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a href="./index.html" class="menu-link link">Студия</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="./portfolio.html" class="menu-link link curent"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="menu-link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-contacts">
+            <a href="tel:+380961111111" class="mob-menu-tel link"
+              >+38 096 111 11 11</a
+            >
+            <a href="mailto:info@devstudio.com" class="mob-menu-mail link"
+              >info@devstudio.com</a
+            >
+            <ul class="mob-socials">
+              <li class="mob-socials-item">
+                <a href="https://www.instagram.com/" class="mob-socials-links"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-socials-item">
+                <a href="https://twitter.com/" class="mob-socials-links"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mob-socials-item">
+                <a href="https://www.facebook.com/" class="mob-socials-links"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mob-socials-item">
+                <a href="https://www.linkedin.com/" class="mob-socials-links"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="menu-close-btn">
+          <svg class="menu-contact-icon" width="40px" height="40px">
+            <use
+              href="./images/images-decoration/mobile-menu.svg#icon-mobile-close"
+              class="contact-icon-svg"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

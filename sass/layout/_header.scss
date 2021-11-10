@@ -15,6 +15,9 @@
   @media screen and (max-width: 768px) {
     display: none;
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
   display: flex;
   align-items: center;
 }
@@ -51,12 +54,14 @@
   @media screen and (max-width: 768px) {
     display: none;
   }
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin-top: 21px;
-  margin-bottom: 20px;
-  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 21px;
+    margin-bottom: 20px;
+    margin-left: auto;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: auto;
